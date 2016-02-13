@@ -22,7 +22,7 @@ a {
   color: #555;
 }
 a img {
-  max-height: 200px;
+  max-height: 190px;
   max-width: 200px;
 	height: auto;
   
@@ -31,8 +31,8 @@ a img {
 .wrapper {
   width: auto;
   padding: 20px 0;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 3%;
+  margin-left: 8%;
   text-align: center;
 }
 .image {
