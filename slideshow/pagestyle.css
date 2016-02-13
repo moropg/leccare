@@ -22,6 +22,10 @@ a {
   color: #555;
 }
 a img {
+  max-height: 200px;
+  max-width: 200px;
+	height: auto;
+  
   border: none;
 }
 .wrapper {
