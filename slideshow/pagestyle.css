@@ -31,8 +31,8 @@ a img {
 .wrapper {
   width: auto;
   padding: 20px 0;
-  margin-right: 3%;
-  margin-left: 8%;
+  margin-right: 0;
+  margin-left: 3%;
   text-align: center;
 }
 .image {
