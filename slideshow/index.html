@@ -1,295 +1,115 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<head>
+		<title>Lens by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading-0 is-loading-1 is-loading-2">
 
-  ga('create', 'UA-73698446-1', 'auto');
-  ga('send', 'pageview');
+		<!-- Main -->
+			<div id="main">
 
-</script>
-  
-  
-    <title>Leccare Gallery</title>
-    <link href="fullscreenstyle.css" type="text/css" rel="stylesheet"></link>
-    <link href="pagestyle.css" type="text/css" rel="stylesheet"></link>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="jquery.fullscreenslides.js"></script>
-    <script id="sample">
-$(function(){
-  // initialize the slideshow
-  $('.image img').fullscreenslides();
-  
-  // All events are bound to this container element
-  var $container = $('#fullscreenSlideshowContainer');
-  
-  $container
-    //This is triggered once:
-    .bind("init", function() { 
+				<!-- Header -->
+					<header id="header">
+						<h1>Lens</h1>
+						<p>Just another fine responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+					</header>
 
-      // The slideshow does not provide its own UI, so add your own
-      // check the fullscreenstyle.css for corresponding styles
-      $container
-        .append('<div class="ui" id="fs-close">&times;</div>')
-        .append('<div class="ui" id="fs-loader">caricamento</div>')
-        .append('<div class="ui" id="fs-prev">&lt;</div>')
-        .append('<div class="ui" id="fs-next">&gt;</div>')
-        .append('<div class="ui" id="fs-caption"><span></span></div>');
-      
-      // Bind to the ui elements and trigger slideshow events
-      $('#fs-prev').click(function(){
-        // You can trigger the transition to the previous slide
-        $container.trigger("prevSlide");
-      });
-      $('#fs-next').click(function(){
-        // You can trigger the transition to the next slide
-        $container.trigger("nextSlide");
-      });
-      $('#fs-close').click(function(){
-        // You can close the slide show like this:
-        $container.trigger("close");
-      });
-      
-    })
-    // When a slide starts to load this is called
-    .bind("startLoading", function() { 
-      // show spinner
-      $('#fs-loader').show();
-    })
-    // When a slide stops to load this is called:
-    .bind("stopLoading", function() { 
-      // hide spinner
-      $('#fs-loader').hide();
-    })
-    // When a slide is shown this is called.
-    // The "loading" events are triggered only once per slide.
-    // The "start" and "end" events are called every time.
-    // Notice the "slide" argument:
-    .bind("startOfSlide", function(event, slide) { 
-      // set and show caption
-      $('#fs-caption span').text(slide.title);
-      $('#fs-caption').show();
-    })
-    // before a slide is hidden this is called:
-    .bind("endOfSlide", function(event, slide) { 
-      $('#fs-caption').hide();
-    });
-});
-    </script>
-  </head>
-  <body>
-    
-    <div class="wrapper">
-      
-      <h2>Example (click image to view)</h2>
-      
-      <div class="image">
-        <a rel="gallery" title="Broadway Tower in Cotswolds, England" href="http://upload.wikimedia.org/wikipedia/commons/c/cb/Broadway_tower_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Broadway_tower_edit.jpg/200px-Broadway_tower_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Broadway_Tower">
-            Broadway Tower in Cotswolds, England
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://en.wikipedia.org/wiki/User:Newton2">
-            Newton2
-          </a>
-        </div>
-      </div>
-      
-      <div class="image">
-        <a rel="gallery" title="New York City at Night, HDR" href="http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/New_York_City_at_night_HDR.jpg/1280px-New_York_City_at_night_HDR.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/22/New_York_City_at_night_HDR.jpg/200px-New_York_City_at_night_HDR.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/New_York">
-            New York City at Night, HDR
-          </a>
-          <br>
-          Taken by 
-          <a href="http://www.flickr.com/people/paulobar/">
-            Paulo Barcellos Jr.
-          </a>
-        </div>
-      </div>
-      
-	  <div class="image">
-        <a rel="gallery" title="Passante sorpreso" href="images/2.jpg">
-          <img src="images/2.thumb.jpg">
-        </a>
-        <div class="caption">
-          Presa bene.
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Passante sorpreso" href="images/3.jpg">
-          <img src="images/3.jpg">
-        </a>
-        <div class="caption">
-          Presa bene.
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Passante sorpreso" href="images/1.jpg">
-          <img src="images/1.thumb.jpg">
-        </a>
-        <div class="caption">
-          Presa bene.
-        </div>
-      </div>
-	  
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+						<article>
+							<a class="thumbnail" href="images/fulls/01.jpg" data-position="left center"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h2>Diam tempus accumsan</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/02.jpg"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h2>Vivamus convallis libero</h2>
+							<p>Sed velit lacus, laoreet at venenatis convallis in lorem tincidunt.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/03.jpg" data-position="top center"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h2>Nec accumsan enim felis</h2>
+							<p>Maecenas eleifend tellus ut turpis eleifend, vitae pretium faucibus.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/04.jpg"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h2>Donec maximus nisi eget</h2>
+							<p>Tristique in nulla vel congue. Sed sociis natoque parturient nascetur.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/05.jpg" data-position="top center"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<h2>Nullam vitae nunc vulputate</h2>
+							<p>In pellentesque cursus velit id posuere. Donec vehicula nulla.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/06.jpg"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<h2>Phasellus magna faucibus</h2>
+							<p>Nulla dignissim libero maximus tellus varius dictum ut posuere magna.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/07.jpg"><img src="images/thumbs/07.jpg" alt="" /></a>
+							<h2>Proin quis mauris</h2>
+							<p>Etiam ultricies, lorem quis efficitur porttitor, facilisis ante orci urna.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/08.jpg"><img src="images/thumbs/08.jpg" alt="" /></a>
+							<h2>Gravida quis varius enim</h2>
+							<p>Nunc egestas congue lorem. Nullam dictum placerat ex sapien tortor mattis.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/09.jpg"><img src="images/thumbs/09.jpg" alt="" /></a>
+							<h2>Morbi eget vitae adipiscing</h2>
+							<p>In quis vulputate dui. Maecenas metus elit, dictum praesent lacinia lacus.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/10.jpg"><img src="images/thumbs/10.jpg" alt="" /></a>
+							<h2>Habitant tristique senectus</h2>
+							<p>Vestibulum ante ipsum primis in faucibus orci luctus ac tincidunt dolor.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/11.jpg"><img src="images/thumbs/11.jpg" alt="" /></a>
+							<h2>Pharetra ex non faucibus</h2>
+							<p>Ut sed magna euismod leo laoreet congue. Fusce congue enim ultricies.</p>
+						</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/12.jpg"><img src="images/thumbs/12.jpg" alt="" /></a>
+							<h2>Mattis lorem sodales</h2>
+							<p>Feugiat auctor leo massa, nec vestibulum nisl erat faucibus, rutrum nulla.</p>
+						</article>
+					</section>
 
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Red_Squirrel">
-            Red Squirrel with pronounced winter ear tufts
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://commons.wikimedia.org/wiki/User:Ray_eye">
-            Ray eye
-          </a>
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a>.</li>
+						</ul>
+					</footer>
 
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Red_Squirrel">
-            Red Squirrel with pronounced winter ear tufts
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://commons.wikimedia.org/wiki/User:Ray_eye">
-            Ray eye
-          </a>
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
+			</div>
 
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Red_Squirrel">
-            Red Squirrel with pronounced winter ear tufts
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://commons.wikimedia.org/wiki/User:Ray_eye">
-            Ray eye
-          </a>
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Red_Squirrel">
-            Red Squirrel with pronounced winter ear tufts
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://commons.wikimedia.org/wiki/User:Ray_eye">
-            Ray eye
-          </a>
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-          <a href="http://en.wikipedia.org/wiki/Red_Squirrel">
-            Red Squirrel with pronounced winter ear tufts
-          </a>
-          <br>
-          Taken by Wikimedian 
-          <a href="http://commons.wikimedia.org/wiki/User:Ray_eye">
-            Ray eye
-          </a>
-        </div>
-      </div>
-	  
-	  <div class="image">
-        <a rel="gallery" title="Red Squirrel with pronounced winter ear tufts" href="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/1280px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-          <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg/200px-Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg">
-        </a>
-        <div class="caption">
-                Red Squirrel with pronounced winter ear tufts
-         </div>
-      </div>
-     
-
-
-	 <br>   
-	
-	</div>	
-	  <div class="foot">
-		Copyright 2012 by <a href="http://eike.se/nd">Eike Send</a>
-      </div>
-	  
-	  
-   
-  </body>
+	</body>
 </html>
